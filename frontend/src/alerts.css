@@ -1,0 +1,14 @@
+main { position: relative; }
+.alerts-popover { position: absolute; top: 76px; right: 42px; z-index: 100; width: min(400px, calc(100% - 32px)); padding: 20px; background: #111b2b; border: 1px solid #29384e; border-radius: 16px; box-shadow: 0 20px 60px #0009; }
+.alerts-heading { display: flex; align-items: flex-start; justify-content: space-between; }
+.alerts-heading h3 { margin: 5px 0 14px; font: 600 17px Manrope, sans-serif; }
+.alert-close { padding: 7px 10px; color: #9eabbc; background: #182437; border: 1px solid #29384e; border-radius: 9px; }
+.empty-alerts { margin: 5px 0 0; padding: 16px; color: #8795a9; font-size: 13px; line-height: 1.5; text-align: center; background: #0c1522; border-radius: 10px; }
+.alert-list { max-height: 330px; overflow-y: auto; }
+.alert-item { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px solid #ffffff12; }
+.alert-indicator { width: 9px; height: 9px; flex: 0 0 9px; border-radius: 50%; }
+.alert-details { display: flex; min-width: 0; flex: 1; flex-direction: column; gap: 4px; }
+.alert-details strong, .alert-value { font-size: 12px; }
+.alert-details small { overflow: hidden; color: #76869d; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.clear-alerts { width: 100%; margin-top: 12px; padding: 10px; color: #57ddb4; background: #0c211d; border: 1px solid #1e493e; border-radius: 9px; }
+@media (max-width: 650px) { .alerts-popover { top: 66px; right: 16px; } }
